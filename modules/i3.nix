@@ -28,5 +28,8 @@
     xkbVariant = "";
   };
 
+  # disable mouse acceleration
+  services.xserver.libinput.mouse.accelProfile = "flat";
+
   programs.dconf.enable = true;
 }
