@@ -25,6 +25,8 @@ exec --no-startup-id dex --autostart --environment i3
 
 exec --no-startup-id xrandr --output --DP-0 --mode 2560x1440 --rate 144.00 --primary --output DP-4 --mode 2560x1440 --rate 144.00 --left-of DP-0
 
+exec --no-startup-id xset -dpms
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
