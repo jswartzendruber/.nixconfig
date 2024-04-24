@@ -12,9 +12,9 @@
   ];
 
   boot.loader = {
-    grub.enable = true;
-    grub.device = "/dev/sda";
-    grub.useOSProber = true;
+    efi.canTouchEfiVariables = true;
+    systemd-boot.enable = true;
+    systemd-boot.configurationLimit = 10;
   };
 
   networking.hostName = "desk-nv";
