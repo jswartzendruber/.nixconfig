@@ -1,11 +1,17 @@
-{ config, pkgs, ... }:
+{ config, pkgs, ... }: {
 
-{
+  imports = [
+    ./i3
+  ];
+
   home = {
   username = "jason";
   homeDirectory = "/home/jason";
 
-  packages = with pkgs; [
+    packages = with pkgs; [
+      # apps
+      firefox
+
       # utils
       zip
       unzip

@@ -1,6 +1,4 @@
-{ pkgs, lib, ... }: let
-  username = "jason";
-in {
+{ pkgs, lib, ... }: {
   users.users.jason = {
     isNormalUser = true;
     description = "jason";
