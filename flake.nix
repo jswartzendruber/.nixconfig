@@ -21,7 +21,9 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
-            home-manager.users.jason = import ./home;
+            home-manager.users.jason.imports = [
+              ./home
+            ];
           }
         ];
       };
