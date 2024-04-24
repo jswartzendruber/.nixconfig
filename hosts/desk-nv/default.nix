@@ -21,6 +21,22 @@
   networking.hostName = "desk-nv";
   networking.networkmanager.enable = true;
 
+  # Nvidia drivers
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
+  services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.nvidia = {
+    modesetting.enable = true;
+    powerManagement.enable = true; # apparently this might cause issues. maybe switch to false.
+    powerManagement.finegrained = false;
+    open = true; # and this.
+    nvidiaSettings = true;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+  };
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
