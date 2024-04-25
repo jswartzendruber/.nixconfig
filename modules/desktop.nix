@@ -52,7 +52,7 @@
 
   environment.systemPackages = with pkgs; [
     git
-    vim
+    neovim
   ];
 
   environment.variables.EDITOR = "nvim";

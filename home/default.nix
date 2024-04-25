@@ -13,6 +13,7 @@
     packages = with pkgs; [
       # apps
       firefox
+      chromium
 
       # dev tools
       rust-analyzer
