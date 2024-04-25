@@ -13,6 +13,10 @@
       # apps
       firefox
 
+      # dev tools
+      cargo
+      rustc
+
       # utils
       zip
       unzip
