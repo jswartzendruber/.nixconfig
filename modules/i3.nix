@@ -19,6 +19,7 @@
         alacritty
         i3blocks
         i3lock
+        picom
         rofi
         feh
       ];
