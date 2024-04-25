@@ -15,9 +15,6 @@
       firefox
       chromium
 
-      # dev tools
-      rust-analyzer
-
       # utils
       zip
       unzip

@@ -1,8 +1,25 @@
-{ pkgs, ... }: {
+{ pkgs, lib, ... }: {
 
   programs.neovim = {
     enable = true;
-    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+
+    extraPackages = with pkgs; [
+      rust-analyzer
+    ];
+
+    plugins = with pkgs; [
+      vimPlugins.nvim-lspconfig
+      vimPlugins.telescope-nvim
+      vimPlugins.nvim-cmp
+      vimPlugins.cmp-vsnip
+      vimPlugins.vim-vsnip
+      vimPlugins.cmp-nvim-lsp
+      vimPlugins.kanagawa-nvim
+    ];
   };
+
+  home.file.".config/nvim/init.lua".source = ./init.lua;
 
 }
