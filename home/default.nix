@@ -14,8 +14,7 @@
       firefox
 
       # dev tools
-      cargo
-      rustc
+      rust-analyzer
 
       # utils
       zip
