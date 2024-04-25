@@ -5,8 +5,8 @@
   ];
 
   home = {
-  username = "jason";
-  homeDirectory = "/home/jason";
+    username = "jason";
+    homeDirectory = "/home/jason";
 
     packages = with pkgs; [
       # apps

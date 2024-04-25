@@ -5,6 +5,23 @@
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
+  # use bash for system shell, fish for interactive.
+  programs.fish = {
+    enable = true;
+    interactiveShellInit = ''
+      set fish_greeting # disable greeting
+    '';
+  };
+  programs.bash = {
+    interactiveShellInit = ''
+      if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
+      then
+        shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=""
+        exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
+      fi
+    '';
+  };
+
   # enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
