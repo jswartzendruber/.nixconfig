@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }: {
+{ pkgs, ... }: {
 
   programs.neovim = {
     enable = true;
@@ -7,6 +7,7 @@
 
     extraPackages = with pkgs; [
       rust-analyzer
+      nil
     ];
 
     plugins = with pkgs; [
