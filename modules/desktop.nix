@@ -11,6 +11,9 @@
     interactiveShellInit = ''
       set fish_greeting # disable greeting
     '';
+    shellAliases = {
+      nd = "nix develop --command fish";
+    };
   };
   programs.bash = {
     interactiveShellInit = ''

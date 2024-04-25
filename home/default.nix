@@ -2,6 +2,7 @@
 
   imports = [
     ./i3
+    ./neovim
     ./alacritty
   ];
 
@@ -19,7 +20,6 @@
       # utils
       zip
       unzip
-      neovim
       ripgrep
       fzf
       tree
