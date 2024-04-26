@@ -23,6 +23,9 @@ font pango:monospace 12
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+# sleep on inactivity
+exec --no-startup-id xautolock -time 20 -locker "systemctl suspend"
+
 exec --no-startup-id xrandr --output --DP-0 --mode 2560x1440 --rate 144.00 --primary --output DP-4 --mode 2560x1440 --rate 144.00 --left-of DP-0
 
 exec --no-startup-id xset -dpms

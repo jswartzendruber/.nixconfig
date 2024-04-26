@@ -9,13 +9,13 @@
 
     displayManager = {
       defaultSession = "none+i3";
-      lightdm.enable = false;
-      gdm.enable = true;
+      sddm.enable = true;
     };
 
     windowManager.i3 = {
       enable = true;
       extraPackages = with pkgs; [
+        xautolock
         alacritty
         i3blocks
         i3lock

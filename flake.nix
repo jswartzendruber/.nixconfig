@@ -10,7 +10,7 @@
     };
   };
 
-  outputs = inputs @ { nixpkgs, home-manager, ... }: {
+  outputs = { nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
       desk-nv = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
