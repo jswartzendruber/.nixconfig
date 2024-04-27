@@ -7,7 +7,6 @@ vim.o.shiftwidth = 4
 
 require('kanagawa').load('wave')
 
-require'lspconfig'.rust_analyzer.setup{}
 require'lspconfig'.nil_ls.setup{}
 
 local builtin = require('telescope.builtin')

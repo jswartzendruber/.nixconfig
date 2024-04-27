@@ -18,6 +18,7 @@
       vimPlugins.vim-vsnip
       vimPlugins.cmp-nvim-lsp
       vimPlugins.kanagawa-nvim
+      vimPlugins.rustaceanvim
     ];
   };
 
