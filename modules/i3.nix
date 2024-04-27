@@ -15,7 +15,7 @@
     windowManager.i3 = {
       enable = true;
       extraPackages = with pkgs; [
-        xautolock
+        xidlehook
         alacritty
         i3blocks
         i3lock
