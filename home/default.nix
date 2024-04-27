@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ pkgs, ... }: {
 
   imports = [
     ./i3
@@ -16,7 +16,6 @@
       chromium
 
       # language servers
-      rust-analyzer
       nil
 
       # utils
