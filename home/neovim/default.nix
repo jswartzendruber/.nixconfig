@@ -5,11 +5,6 @@
     viAlias = true;
     vimAlias = true;
 
-    extraPackages = with pkgs; [
-      rust-analyzer
-      nil
-    ];
-
     plugins = with pkgs; [
       vimPlugins.nvim-lspconfig
       vimPlugins.telescope-nvim

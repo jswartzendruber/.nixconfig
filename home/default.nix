@@ -15,7 +15,12 @@
       firefox
       chromium
 
+      # language servers
+      rust-analyzer
+      nil
+
       # utils
+      helix
       zip
       unzip
       ripgrep
