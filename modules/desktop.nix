@@ -40,6 +40,11 @@
   time.timeZone = "America/Detroit";
   i18n.defaultLocale = "en_US.UTF-8";
   services.printing.enable = true;
+  services.avahi = {
+    enable = true;
+    nssmdns = true;
+    openFirewall = true;
+  };
 
   # enable ssh
   services.openssh = {
