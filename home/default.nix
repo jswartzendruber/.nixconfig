@@ -17,6 +17,7 @@
       spotify
       obs-studio
       vlc
+      steam
 
       # language servers
       nil
