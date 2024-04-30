@@ -14,6 +14,7 @@
       # apps
       firefox
       chromium
+      spotify
 
       # language servers
       nil
