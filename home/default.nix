@@ -16,6 +16,7 @@
       chromium
       spotify
       obs-studio
+      vlc
 
       # language servers
       nil
