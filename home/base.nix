@@ -21,6 +21,7 @@
 
       # language servers
       nil
+      vscode-langservers-extracted
 
       # utils
       helix
