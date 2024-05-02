@@ -6,7 +6,7 @@
 
 {
   imports = [
-    ../../modules/desktop.nix
+    ../../modules/base.nix
     ../../modules/i3.nix
 
     ./hardware-configuration.nix

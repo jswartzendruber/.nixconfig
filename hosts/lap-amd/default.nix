@@ -2,11 +2,11 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, ... }:
+{ ... }:
 
 {
   imports = [
-    ../../modules/laptop.nix
+    ../../modules/base.nix
     ../../modules/gnome.nix
 
     ./hardware-configuration.nix

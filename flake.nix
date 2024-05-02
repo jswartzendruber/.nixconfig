@@ -22,7 +22,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.users.jason.imports = [
-              ./home
+              ./home/laptop-gnome.nix
             ];
           }
         ];
@@ -38,7 +38,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.users.jason.imports = [
-              ./home
+              ./home/desktop-i3.nix
             ];
           }
         ];
