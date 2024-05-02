@@ -12,6 +12,22 @@
 
   outputs = { nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
+      lap-amd = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./hosts/lap-amd
+
+          home-manager.nixosModules.home-manager {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+
+            home-manager.users.jason.imports = [
+              ./home
+            ];
+          }
+        ];
+      };
+
       desk-nv = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
