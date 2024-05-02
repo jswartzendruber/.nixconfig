@@ -1,7 +1,7 @@
 { pkgs, ... }: {
 
   imports = [
-    ./gnome
+    ./i3
     ./neovim
     ./alacritty
   ];
