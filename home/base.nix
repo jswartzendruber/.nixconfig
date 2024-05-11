@@ -18,6 +18,7 @@
       obs-studio
       vlc
       steam
+      gimp
 
       # language servers
       nil
