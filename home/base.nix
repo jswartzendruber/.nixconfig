@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, pkgs-unstable, ... }: {
 
   imports = [
     ./gnome
@@ -19,6 +19,7 @@
       vlc
       steam
       gimp
+      pkgs-unstable.zed-editor
 
       # language servers
       nil
