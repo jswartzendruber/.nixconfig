@@ -27,6 +27,7 @@
     driSupport = true;
     driSupport32Bit = true;
   };
+  hardware.nvidia.forceFullCompositionPipeline = true;
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia = {
     modesetting.enable = true;
