@@ -2,7 +2,6 @@
 
   imports = [
     ./gnome
-    ./neovim
     ./alacritty
   ];
 
