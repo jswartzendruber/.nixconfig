@@ -33,6 +33,7 @@
       tree
       neofetch
       htop
+      renderdoc
     ];
 
     stateVersion = "23.11";
