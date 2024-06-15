@@ -34,6 +34,7 @@
       neofetch
       htop
       renderdoc
+      scrot
     ];
 
     stateVersion = "23.11";
