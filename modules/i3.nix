@@ -2,15 +2,15 @@
 
   environment.pathsToLink = [ "/libexec" ];
 
+  services.displayManager = {
+    defaultSession = "none+i3";
+    sddm.enable = true;
+  };
+
   services.xserver = {
     enable = true;
 
     desktopManager.xterm.enable = false;
-
-    displayManager = {
-      defaultSession = "none+i3";
-      sddm.enable = true;
-    };
 
     windowManager.i3 = {
       enable = true;
@@ -25,8 +25,8 @@
       ];
     };
 
-    layout = "us";
-    xkbVariant = "";
+    xkb.layout = "us";
+    xkb.variant = "";
   };
 
   # audio
@@ -39,7 +39,7 @@
   };
 
   # disable mouse acceleration
-  services.xserver.libinput.mouse.accelProfile = "flat";
+  services.libinput.mouse.accelProfile = "flat";
 
   programs.dconf.enable = true;
 }
