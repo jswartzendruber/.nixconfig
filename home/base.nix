@@ -19,6 +19,7 @@
       steam
       gimp
       pkgs-unstable.zed-editor
+      playerctl
 
       # language servers
       nil
