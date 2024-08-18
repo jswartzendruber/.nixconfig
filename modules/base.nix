@@ -59,6 +59,6 @@
     git
   ];
 
-  environment.variables.EDITOR = "nvim";
+  environment.variables.EDITOR = "hx";
 
 }
