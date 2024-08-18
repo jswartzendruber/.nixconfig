@@ -26,6 +26,7 @@
       vscode-langservers-extracted
 
       # utils
+      emacs
       helix
       zip
       unzip
