@@ -26,7 +26,6 @@
       vscode-langservers-extracted
 
       # utils
-      emacs
       helix
       zip
       unzip
@@ -47,6 +46,17 @@
     userName = "jswartzendruber";
     userEmail = "jsw695538@gmail.com";
     extraConfig.init.defaultBranch = "main";
+  };
+
+  programs.emacs = {
+    enable = true;
+    package = pkgs.emacs;
+    extraConfig = ''
+      (menu-bar-mode -1)
+      (scroll-bar-mode -1)
+      (tool-bar-mode -1)
+      (load-theme 'modus-vivendi)
+    '';
   };
 
   programs.home-manager.enable = true;
