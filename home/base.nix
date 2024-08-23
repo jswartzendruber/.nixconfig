@@ -26,6 +26,8 @@
       vscode-langservers-extracted
 
       # utils
+      jetbrains.idea-community-src
+      vscode
       emacs
       helix
       zip
