@@ -20,6 +20,7 @@
       gimp
       pkgs-unstable.zed-editor
       playerctl
+      prismlauncher
 
       # language servers
       nil
