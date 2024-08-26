@@ -39,6 +39,11 @@
     };
   };
 
+  # usb wifi dongle
+  boot.extraModulePackages = with config.boot.kernelPackages; [
+    rtl8821au
+  ];
+
   boot.loader = {
     efi.canTouchEfiVariables = true;
     systemd-boot.enable = true;
