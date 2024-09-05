@@ -27,6 +27,7 @@
       vscode-langservers-extracted
 
       # utils
+      pcmanfm
       jetbrains.idea-community-src
       vscode
       emacs
