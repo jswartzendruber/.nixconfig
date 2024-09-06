@@ -27,6 +27,8 @@
       vscode-langservers-extracted
 
       # utils
+      mullvad-vpn
+      qbittorrent
       pcmanfm
       jetbrains.idea-community-src
       vscode
