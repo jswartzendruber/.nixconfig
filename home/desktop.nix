@@ -2,8 +2,7 @@
 
   imports = [
     ./base.nix
-    ./picom
-    ./i3
+    ./gnome
   ];
   
 }

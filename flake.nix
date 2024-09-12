@@ -52,7 +52,7 @@
             };
 
             home-manager.users.jason.imports = [
-              ./home/desktop-i3.nix
+              ./home/desktop.nix
             ];
           }
         ];
