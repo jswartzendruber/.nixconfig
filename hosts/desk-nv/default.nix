@@ -7,7 +7,7 @@
 {
   imports = [
     ../../modules/base.nix
-    ../../modules/gnome.nix
+    ../../modules/i3.nix
 
     ./hardware-configuration.nix
   ];

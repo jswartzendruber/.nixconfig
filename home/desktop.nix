@@ -2,7 +2,7 @@
 
   imports = [
     ./base.nix
-    ./gnome
+    ./i3
   ];
   
 }
