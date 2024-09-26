@@ -27,6 +27,7 @@
       vscode-langservers-extracted
 
       # utils
+      golden-cheetah
       mullvad-vpn
       qbittorrent
       pcmanfm
