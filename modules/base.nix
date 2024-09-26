@@ -25,6 +25,16 @@
     '';
   };
 
+  # ant+ dongle
+  services.udev.extraRules = ''
+    # Garmin ANT+ - USB1
+    ATTRS{idVendor}=="0fcf", ATTRS{idProduct}=="1004", MODE="0666"
+    # Garmin ANT+ - USB2
+    ATTRS{idVendor}=="0fcf", ATTRS{idProduct}=="1008", MODE="0666"
+    # hLine USB2 ANT2
+    ATTRS{idVendor}=="0fcf", ATTRS{idProduct}=="1009", MODE="0666"
+  '';
+
   # enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
