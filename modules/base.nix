@@ -5,6 +5,8 @@
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
+  programs.steam.enable = true;
+
   # use bash for system shell, fish for interactive.
   programs.fish = {
     enable = true;
