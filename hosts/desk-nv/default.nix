@@ -12,33 +12,6 @@
     ./hardware-configuration.nix
   ];
 
-  services.blocky = {
-    enable = true;
-    settings = {
-      upstreams.groups.default = [
-        "https://one.one.one.one/dns-query" # Using Cloudflare's DNS over HTTPS server
-      ];
-      # For initially solving DoH/DoT Requests when no system Resolver is available.
-      bootstrapDns = {
-        upstream = "https://one.one.one.one/dns-query";
-        ips = [ "1.1.1.1" "1.0.0.1" ];
-      };
-      blocking = {
-        blackLists.ads = [
-          "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/multi.txt"
-          "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"
-          "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
-        ];
-        clientGroupsBlock.default = [ "ads" ];
-      };
-      caching = {
-        minTime = "5m";
-        maxTime = "30m";
-        prefetching = true;
-      };
-    };
-  };
-
   # usb wifi dongle
   boot.extraModulePackages = with config.boot.kernelPackages; [
     rtl8821au
@@ -54,10 +27,9 @@
   networking.networkmanager.enable = true;
 
   # Nvidia drivers
-  hardware.opengl = {
+  hardware.graphics= {
     enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
   };
   hardware.nvidia.forceFullCompositionPipeline = true;
   services.xserver.videoDrivers = [ "nvidia" ];
