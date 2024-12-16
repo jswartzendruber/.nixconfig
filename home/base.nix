@@ -21,6 +21,7 @@
       pkgs-unstable.zed-editor
       playerctl
       prismlauncher
+      ghostty
 
       # language servers
       nil
