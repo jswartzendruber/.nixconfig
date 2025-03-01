@@ -45,6 +45,7 @@
       htop
       renderdoc
       scrot
+      yafc-ce
     ];
 
     stateVersion = "23.11";
