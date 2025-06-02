@@ -7,6 +7,8 @@
 
   programs.steam.enable = true;
 
+  services.envfs.enable = true;
+
   # use bash for system shell, fish for interactive.
   programs.fish = {
     enable = true;
