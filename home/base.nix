@@ -46,6 +46,7 @@
       renderdoc
       scrot
       yafc-ce
+      godot
     ];
 
     stateVersion = "23.11";
